@@ -1,0 +1,28 @@
+development: &devel
+  adapter: mysql2
+  database: <%= ENV['DATABASE_NAME'] || 'iTV_devel' %>
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  host: <%= ENV['DATABASE_HOST'] || '127.0.0.1' %>
+  port: <%= ENV['DATABASE_PORT'] || '3306' %>
+  username: <%= ENV['DATABASE_USER'] || 'root' %>
+  <% if ENV['DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  <% end %>
+
+single_node_development:
+  <<: *devel
+
+test: &testing
+  adapter: mysql2
+  database: <%= ENV['DATABASE_NAME'] || 'iTV_test' %>
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  host: <%= ENV['DATABASE_HOST'] || '127.0.0.1' %>
+  port: 3306
+  username: root
+
+  single_node_test:
+  <<: *testing
