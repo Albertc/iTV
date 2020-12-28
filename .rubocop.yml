@@ -1,0 +1,30 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'config/routes.rb'
+
+Metrics/MethodLength:
+  Exclude:
+  - 'db/migrate/*.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'db/migrate/*.rb'
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+  AllowInnerSlashes: true
+
+Layout/LeadingCommentSpace:
+  Exclude:
+    - 'Gemfile'
+
+Style/StringLiterals:
+  Exclude:
+    - 'db/**/*.rb'
