@@ -1,7 +1,11 @@
 FactoryBot.define do
   factory :episode do
-    sequence(:title) { |seq| "Episode title #{seq}" }
-    sequence(:plot) { |seq| "Episode plot #{seq}" }
+    sequence(:title) { |seq| "Episode num. #{seq}" }
+    sequence(:plot) { |seq| "Plot of the episode" }
     sequence(:number) { |seq| seq }
+
+    trait :with_season do
+      season
+    end
   end
 end
