@@ -1,0 +1,21 @@
+{
+  "id": "file:/api/v1/movies/index.json",
+  "$schema": "https://json-schema.org/draft-06/schema#",
+  "definitions": {
+    "movies": {
+      "description": "A collection of movies",
+      "example": [{ "id": 1, "title": "El Hobbit", "plot": "adventure" }],
+      "type": "array",
+      "items": {
+        "$ref": "file:/api/v1/movie.json#"
+      }
+    }
+  },
+  "type": "object",
+  "required": ["movies"],
+  "properties": {
+    "movies": {
+      "$ref": "#/definitions/movies"
+    }
+  }
+}

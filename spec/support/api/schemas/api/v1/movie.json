@@ -1,0 +1,12 @@
+{
+  "id": "file:/api/v1/movie.json",
+  "description": "A movie",
+  "example": { "id": 1, "title": "El Hobbit", "plot": "adventure" },
+  "type": "object",
+  "required": ["id", "title", "plot"],
+  "properties": {
+    "id": { "type": "integer" },
+    "title": { "type": "string" },
+    "plot": { "type": "string" }
+  }
+}

@@ -4,7 +4,6 @@ require Rails.root.join('app', 'presenters', 'api', 'v1', 'movies_presenter.rb')
 
 module Api
   module V1
-    # Movies controller
     class MoviesController < ApplicationController
       include Cacheable
 
