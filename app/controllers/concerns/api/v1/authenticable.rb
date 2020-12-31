@@ -7,6 +7,8 @@ module Api
 
       included do
         before_action :authenticate
+
+        attr_reader :current_user
       end
 
       private
@@ -17,7 +19,7 @@ module Api
         # and authenticated, you can identify the user in each request
         # by a parameter like user_id. we assume there is a authenticated user"
         @current_user = User.find(params[:user_id])
-      resque ActiveRecord::RecordNotFound
+      rescue ActiveRecord::RecordNotFound
         @current_user = nil
       end
     end

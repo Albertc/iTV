@@ -1,0 +1,33 @@
+{
+  "id": "file:/api/v1/movies/index_with_seasons.json",
+  "$schema": "https://json-schema.org/draft-06/schema#",
+  "definitions": {
+    "episodes": {
+      "description": "A collection of episodes",
+      "type": "array",
+      "items": {
+        "$ref": "file:/api/v1/episode.json#"
+      }
+    }
+  },
+  "type": "object",
+  "required": ["library"],
+  "properties": {
+    "library": {
+      "type": "array",
+      "items":{
+        "type": "object",
+        "required": ["id", "title", "plot", "type"],
+        "properties": {
+          "id": { "type": "integer" },
+          "title": { "type": "string" },
+          "plot": { "type": "string" },
+          "type": { "type": "string" },
+          "episodes":{
+            "$ref": "#/definitions/episodes"
+          }
+        }
+      }
+    }
+  }
+}
