@@ -1,0 +1,13 @@
+{
+  "id": "file:/api/v1/episode.json",
+  "description": "An episode",
+  "example": { "id": 1, "episode_number": 1, "title": "An Unexpected Journey" },
+  "type": "object",
+  "required": ["id", "number", "title", "plot"],
+  "properties": {
+    "id": { "type": "integer" },
+    "number": { "type": "integer" },
+    "title": { "type": "string" },
+    "plot": { "type": "string" }
+  }
+}

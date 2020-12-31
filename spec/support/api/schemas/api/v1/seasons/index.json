@@ -1,0 +1,47 @@
+{
+  "id": "file:/api/v1/seasons/index.json",
+  "$schema": "https://json-schema.org/draft-06/schema#",
+  "definitions": {
+    "seasons": {
+      "description": "A collection of seasons",
+      "example": [
+        { "id": 1,
+          "title": "Hobbit Season",
+          "plot": "Adventure",
+          "number": 1,
+          "episodes": [
+            {
+              "id": 1,
+              "number": 1,
+              "title": "An Unexpected Journey",
+              "plot": "Adventures and action"
+            },
+            {
+              "id": 2,
+              "number": 2,
+              "title": "The Desolation of Smaug",
+              "plot": "Adventures and action"
+            },
+            {
+              "id": 3,
+              "number": 3,
+              "title": "The Battle of the Five Armies",
+              "plot": "Adventures and action"
+            }
+          ]
+        }
+      ],
+      "type": "array",
+      "items": {
+        "$ref": "file:/api/v1/season.json#"
+      }
+    }
+  },
+  "type": "object",
+  "required": ["seasons"],
+  "properties": {
+    "seasons": {
+      "$ref": "#/definitions/seasons"
+    }
+  }
+}

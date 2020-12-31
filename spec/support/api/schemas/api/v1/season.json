@@ -1,0 +1,24 @@
+{
+  "id": "file:/api/v1/season.json",
+  "description": "A season",
+  "definitions": {
+    "episodes": {
+      "description": "A collection of episodes",
+      "type": "array",
+      "items": {
+        "$ref": "file:/api/v1/episode.json#"
+      }
+    }
+  },
+  "type": "object",
+  "required": ["id", "number", "title", "plot"],
+  "properties": {
+    "id": { "type": "integer" },
+    "number": { "type": "integer" },
+    "title": { "type": "string" },
+    "plot": { "type": "string" },
+    "episodes":{
+      "$ref": "#/definitions/episodes"
+    }
+  }
+}
