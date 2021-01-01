@@ -6,11 +6,12 @@ gem 'bootsnap', '~> 1.5', '>= 1.5.1', require: false
 gem 'rails', '~> 6.1'
 gem 'puma', '~> 4.3.6'
 gem 'mysql2', '~> 0.5.3'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'rubocop'
-  gem 'rubocop-rails', '~> 2.8', '>= 2.8.1'
+  gem 'rubocop', '~> 1.7'
+  gem 'rubocop-rails', '~> 2.9', '>= 2.9.1'
   gem 'rubocop-rspec', '~> 2.1'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

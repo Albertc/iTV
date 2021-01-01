@@ -25,6 +25,7 @@ module Api
         Season.ordered
               .select(:id, :title, :plot, :number)
               .includes(:episodes)
+              .page(params[:page])
       end
     end
   end

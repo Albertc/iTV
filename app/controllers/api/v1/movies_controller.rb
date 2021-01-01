@@ -20,7 +20,7 @@ module Api
       end
 
       def query_all_movies
-        Movie.ordered.select(:id, :title, :plot)
+        Movie.ordered.select(:id, :title, :plot).page(params[:page])
       end
     end
   end
