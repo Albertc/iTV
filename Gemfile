@@ -21,7 +21,6 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
   gem 'dotenv-rails'
   gem 'factory_bot_rails', '~> 6.1'
   gem 'rspec-rails', '~> 3.8'
@@ -30,6 +29,7 @@ end
 group :test do
   gem 'json_matchers', '~> 0.11.1'
   gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
+  gem 'database_cleaner-active_record', '~> 1.8'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
