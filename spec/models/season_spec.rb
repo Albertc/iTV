@@ -4,7 +4,7 @@ RSpec.describe Season, type: :model do
   it { should validate_presence_of(:title) }
   it { should validate_presence_of(:plot) }
   it { should validate_numericality_of(:number) }
-  it { should validate_uniqueness_of(:number).scoped_to(%i(type parent_id)) }
+  it { should validate_uniqueness_of(:number).scoped_to(%i[type parent_id]) }
 
   it { should have_many(:episodes).dependent(:restrict_with_error) }
   it { should have_many(:purchase_options).dependent(:destroy) }

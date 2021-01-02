@@ -63,7 +63,7 @@ RSpec.describe '[GET] /api/v1/seasons', type: :request do
                       number: 2,
                       title: 'second episode',
                       plot: 'plot'
-                    },
+                    }
                   ]
               },
               {

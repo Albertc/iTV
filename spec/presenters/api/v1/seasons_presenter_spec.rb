@@ -32,19 +32,19 @@ RSpec.describe Api::V1::SeasonsPresenter do
                   id: first_season_episodes.first.id,
                   number: first_season_episodes.first.number,
                   title: "Episode num. #{first_season_episodes.first.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 },
                 {
                   id: first_season_episodes.second.id,
                   number: first_season_episodes.second.number,
                   title: "Episode num. #{first_season_episodes.second.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 },
                 {
                   id: first_season_episodes.last.id,
                   number: first_season_episodes.last.number,
                   title: "Episode num. #{first_season_episodes.last.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 }
               ]
           },
@@ -59,19 +59,19 @@ RSpec.describe Api::V1::SeasonsPresenter do
                   id: second_season_episodes.first.id,
                   number: second_season_episodes.first.number,
                   title: "Episode num. #{second_season_episodes.first.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 },
                 {
                   id: second_season_episodes.second.id,
                   number: second_season_episodes.second.number,
                   title: "Episode num. #{second_season_episodes.second.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 },
                 {
                   id: second_season_episodes.last.id,
                   number: second_season_episodes.last.number,
                   title: "Episode num. #{second_season_episodes.last.number}",
-                  plot: "Plot of the episode"
+                  plot: 'Plot of the episode'
                 }
               ]
           }

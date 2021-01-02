@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :season do
-    title { 'Season title'}
-    plot { 'Season plot'}
+    title { 'Season title' }
+    plot { 'Season plot' }
     sequence(:number) { |seq| seq }
 
     trait :with_3_episodes do

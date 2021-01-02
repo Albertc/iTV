@@ -20,7 +20,7 @@ RSpec.describe Purchase, type: :model do
       it 'raises an RecordInvalid error and does not create a new Purchase ' do
         initial_count = Purchase.count
 
-        expect{ second_purchase }.to raise_error(ActiveRecord::RecordInvalid)
+        expect { second_purchase }.to raise_error(ActiveRecord::RecordInvalid)
 
         expect(Purchase.count).to eq(initial_count)
       end

@@ -5,5 +5,5 @@ class Season < Content
 
   has_many :purchase_options, as: :purchasable, dependent: :destroy
 
-  scope :ordered, ->{order(:created_at)}
+  scope :ordered, -> { order(:created_at) }
 end
